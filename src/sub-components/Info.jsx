@@ -10,7 +10,7 @@ const Info = () => {
   } = useFormDataCtx();
 
   const { errorState, handleKeyUp, emailMsg } = useMulltiFormContext();
-  console.log(errorState);
+
   return (
     <section className="info-section py-12 px-6 md:px-0">
       <Heading

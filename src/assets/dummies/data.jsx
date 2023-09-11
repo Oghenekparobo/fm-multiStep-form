@@ -19,3 +19,24 @@ export const billings = [
     price: 15,
   },
 ];
+
+export const addOns = [
+  {
+    id: "online",
+    name: "Online service",
+    desc: "Access to multiplayer games",
+    price: 10,
+  },
+  {
+    id: "large",
+    name: " Larger storage",
+    desc: "Extra 1TB of cloud save",
+    price: 2,
+  },
+  {
+    id: "custom",
+    name: "Customizeable profile",
+    desc: "Custom view on your profile",
+    price: 2,
+  },
+];

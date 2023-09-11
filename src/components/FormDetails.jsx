@@ -1,5 +1,8 @@
 import { useMulltiFormContext } from "../context/steps-context";
 import { PersonalInfo, Plan } from "../sub-components";
+import AddOns from "../sub-components/AddOns";
+import FinishingUp from "../sub-components/FinishingUp";
+import Summary from "../sub-components/Summary";
 
 const FormDetails = () => {
   const { currentStep } = useMulltiFormContext();
@@ -11,6 +14,13 @@ const FormDetails = () => {
 
       case 2:
         return <Plan />;
+
+      case 3:
+        return <AddOns />;
+      case 4:
+        return <FinishingUp />;
+      case 5:
+        return <Summary />;
 
       default:
         break;

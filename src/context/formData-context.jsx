@@ -13,6 +13,11 @@ const initialState = {
     duration: "",
     price: "",
   },
+  addOns: {
+    online: false,
+    large: false,
+    custom: false,
+  },
 };
 
 const reducerFn = (state, action) => {
@@ -34,6 +39,19 @@ const reducerFn = (state, action) => {
 
     return { ...state, plan: { ...state.plan, type: type, price: price } };
   }
+
+  if (action.type === "FILL_ADD_ONS") {
+    const selectedAddOns = action.payload;
+
+    const updatedAddOns = {
+      online: selectedAddOns.includes("online"),
+      large: selectedAddOns.includes("large"),
+      custom: selectedAddOns.includes("custom"),
+    };
+
+    return { ...state, addOns: updatedAddOns };
+  }
+
   throw Error("Unknown action: " + action.type);
 };
 
@@ -56,8 +74,12 @@ export const FormDataProvider = ({ children }) => {
     dispatch({ type: "FILL_DETAILS", payload: { type, price } });
   };
 
+  const fillAddOns = (add_ons) => {
+    dispatch({ type: "FILL_ADD_ONS", payload: add_ons });
+  };
+
   useEffect(() => {
-    console.log(state);
+    console.log(state, state.addOns);
   }, [state]);
 
   return (
@@ -67,6 +89,7 @@ export const FormDataProvider = ({ children }) => {
         fillData,
         fillPlan,
         fillPlanDetails,
+        fillAddOns,
       }}
     >
       {children}
