@@ -11,7 +11,7 @@ const Summary = () => {
           Thank you!
         </h1>
       </div>
-      <p className="px-10 max-w-sm xl:max-w-md md:px-0">
+      <p className="px-10 text-gray-400 max-w-sm xl:max-w-md md:px-0">
         Thanks for confirming your subscription! We hope you have fun using our
         platform. if you ever need support, please feel free to email us at
         support@loremgaming.com.

@@ -1,7 +1,7 @@
 import Heading from "./utils/Heading";
 
 import { addOns } from "../assets/dummies/data";
-import AddOnCard from "./utils/addOnCard";
+import AddOnCard from "./utils/AddOnCard";
 import { useEffect, useState } from "react";
 import { useFormDataCtx } from "../context/formData-context";
 
