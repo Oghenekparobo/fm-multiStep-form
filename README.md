@@ -1,39 +1,56 @@
-# Interactive Multi-step Form with React and Tailwind CSS
+# Movie Discovery Web Application
 
-This project is a solution to the [Frontend Mentor](https://www.frontendmentor.io) challenge to build an interactive multi-step form. The goal is to create a form that allows users to complete a sequence of steps, go back to previous steps to update their selections, view a summary of their selections on the final step, and confirm their order.
+![Project Screenshot](src/assets/screenshot.png)
 
-![Screenshot](src/assets/images/fm-mfm.PNG)
+## Table of Contents
 
-## Overview
+- [Objective](#objective)
+- [Features](#features)
+- [Prerequisites](#prerequisites)
+- [Getting Started](#getting-started)
+- [Configuration](#configuration)
 
-Your users should be able to:
+## Objective
 
-- Complete each step of the sequence
-- Go back to a previous step to update their selections
-- See a summary of their selections on the final step and confirm their order
-- View the optimal layout for the interface depending on their device's screen size
-- See hover and focus states for all interactive elements on the page
-- Receive form validation messages if:
-  - A field has been missed
-  - The email address is not formatted correctly
-  - A step is submitted, but no selection has been made
+Create a movie discovery web application that allows users to search for movies, view details about them, and save their favorite movies. This project consumes data from the TMDB API.
 
-## Built with
+## Features
 
-This project was built using the following technologies:
+- Search for movies by title, genre, or keywords.
+- View detailed information about each movie.
+- Save favorite movies to a user's profile.
+- design using Tailwind CSS.
+- Fast development with Vite.
 
-- React
-- Tailwind CSS
+## Prerequisites
 
-## Challenges
+Before you begin, ensure you have met the following requirements:
 
-While working on this project, I encountered the following challenges:
+- Node.js: Make sure you have Node.js installed. You can download it from [nodejs.org](https://nodejs.org/).
 
-- Implementing input validations: I worked on improving the input validation functionality to ensure data integrity.
-- Data persistence: I focused on the UI and multi-step functionality, so data does not persist between sessions. Local storage could be implemented for data persistence if needed.
+## Getting Started
 
-## Author
+To get a local copy of this project up and running, follow these steps:
 
-- Website: [Stephen's GitHub](https://github.com/Oghenekparobo)
-- Frontend Mentor Profile: [Oghenekparobo](https://www.frontendmentor.io/profile/Oghenekparobo)
-- Twitter: [Stephen's Twitter](https://twitter.com/stephenjyd)
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/Oghenekparobo/x2
+   ```
+
+2. Navigate to the project directory:
+   cd x2
+3. Install project dependencies:
+   npm install
+
+## Configuration
+
+1. Create a TMDB API key by signing up at The Movie Database (TMDb).
+
+2. Create a .env file in the project root and add your TMDB API key:
+   VITE_TMDB_API_KEY=your_api_key_here
+3. npm run dev
+
+`This will start the application in development mode. Open your browser and navigate to http://localhost:3000 to use the application.
+`
+Explore the movie discovery features, search for movies, view details, and save your favorites.
